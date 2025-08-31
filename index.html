@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,6 @@
       rel="stylesheet"
     />
     <!-- tailwind CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -26,13 +25,16 @@
         },
       };
     </script>
-    <!-- daisyUI CDN -->
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI CDN -->
     <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.css"
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <style>
       .font-poppins {
         font-family: "Poppins", sans-serif;
@@ -133,7 +135,7 @@
             </ul>
           </div>
           <div class="ml-5">
-            <a class="btn bg-bike-primary">Login</a>
+            <a class="btn bg-red-500 text-white px-7">Login</a>
           </div>
         </div>
       </nav>
@@ -218,7 +220,7 @@
                   Exercitation veniam consequat sunt nostrud amet.
                 </p>
                 <button
-                  class="btn bg-bike-primary px-5 text-white font-semibold"
+                  class="btn bg-red-500 px-5 text-white font-semibold"
                 >
                   Purchase
                 </button>
@@ -240,11 +242,11 @@
       </div>
     </header>
     <!-- main section  -->
-    <main>
+    <main class="lg:mx-24">
       <!-- bike collection section  -->
-      <section class="lg:py-10 lg:px-24">
+      <section class="lg:py-10">
         <div class="text-center space-y-2">
-          <h1 class="font-semibold text-5xl text-center">
+          <h1 class="font-semibold text-4xl text-center">
             Fetured Bikes In This Year
           </h1>
           <p
@@ -253,16 +255,347 @@
             Best bike collection
           </p>
         </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:py-10 gap-5">
-          <img class="shadow-lg bg-slate-500 rounded-lg" src="images/slider/bike2.png" alt="">
-          <img class="shadow-lg bg-slate-500 rounded-lg" src="images/slider/bike3.png" alt="">
-          <img class="shadow-lg bg-slate-500 rounded-lg" src="images/slider/bike4.png" alt="">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:py-10 gap-5"
+        >
+          <img
+            class="shadow-lg bg-slate-500 rounded-lg"
+            src="images/slider/bike2.png"
+            alt=""
+          />
+          <img
+            class="shadow-lg bg-slate-500 rounded-lg"
+            src="images/slider/bike3.png"
+            alt=""
+          />
+          <img
+            class="shadow-lg bg-slate-500 rounded-lg"
+            src="images/slider/bike4.png"
+            alt=""
+          />
         </div>
       </section>
+      <!-- latest bike section -->
+      <section class="lg:my-10">
+        <h1 class="font-semibold text-4xl text-center">Latest News</h1>
 
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:my-10 place-items-center"
+        >
+          <!-- Card 1 -->
+          <div
+            class="card bg-base-100 shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img src="images/others/latest1.png" alt="Latest News 1" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-2xl">
+                Ducati XDIAVEL S-73
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button class="btn bg-red-500 text-white px-7">
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="card bg-base-100 shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img src="images/others/latest2.png" alt="Latest News 2" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-2xl">Yamaha R15 V4</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn border border-red-500 bg-white text-red-500 px-6 text-bike-primary font-semibold text-xl"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="card bg-base-100 shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <figure>
+              <img src="images/others/latest3.png" alt="Latest News 3" />
+            </figure>
+            <div class="card-body">
+              <h2 class="card-title font-semibold text-2xl">
+                Kawasaki Ninja H2
+              </h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus,
+                fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <div class="card-actions">
+                <button
+                  class="btn border border-red-500 bg-white text-red-500 px-6 text-bike-primary font-semibold text-xl"
+                >
+                  Read More
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- happy cleint section -->
+      <section class="space-y-10 lg:py-24">
+        <h1 class="font-semibold text-4xl text-center">
+          Happy <span class="text-bike-primary">Clients says</span>
+        </h1>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5"
+        >
+          <div
+            class="text-center inset-shadow-sm inset-shadow-indigo-500 p-10 rounded-xl space-y-3 bg-slate-500"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-1.png" />
+              </div>
+            </div>
+            <div class="space-y-4">
+              <p class="text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="rating gap-1">
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-red-400"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-yellow-400"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-lime-400"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-green-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <h4 class="font-semibold text-lime-500">Regina Miles</h4>
+              <h4 class="font-semibold text-white">Banker</h4>
+            </div>
+          </div>
+          <div
+            class="text-center inset-shadow-sm inset-shadow-indigo-500 p-10 rounded-xl space-y-3 bg-slate-500"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-2.png" />
+              </div>
+            </div>
+            <div class="space-y-4">
+              <p class="text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="rating gap-1">
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-red-400"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-yellow-400"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-lime-400"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-green-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <h4 class="font-semibold text-lime-500">Regina Miles</h4>
+              <h4 class="font-semibold text-white">Banker</h4>
+            </div>
+          </div>
+          <div
+            class="text-center inset-shadow-sm inset-shadow-indigo-500 p-10 rounded-xl space-y-3 bg-slate-500"
+          >
+            <div class="avatar">
+              <div class="w-24 rounded-full">
+                <img src="images/others/user-3.png" />
+              </div>
+            </div>
+            <div class="space-y-4">
+              <p class="text-white">
+                Slate helps you see how many more days you need to work to reach
+                your financial goal for the month and year.
+              </p>
+              <div class="rating gap-1">
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-red-400"
+                  aria-label="1 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-orange-400"
+                  aria-label="2 star"
+                  checked="checked"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-yellow-400"
+                  aria-label="3 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-lime-400"
+                  aria-label="4 star"
+                />
+                <input
+                  type="radio"
+                  name="rating-3"
+                  class="mask mask-heart bg-green-400"
+                  aria-label="5 star"
+                />
+              </div>
+              <h4 class="font-semibold text-lime-500">Regina Miles</h4>
+              <h4 class="font-semibold text-white">Banker</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Frequently Asked Questions  -->
+      <section class="space-y-10 lg:pb-24">
+        <h1 class="font-semibold text-4xl text-center ">
+          Frequently <span class="text-red-500">Asked Questions</span>
+        </h1>
+        <div class="grid grid-cols-1 lg:grid-cols-2 place-items-center lg:pt-10">
+          <div>
+            <img src="images/others/faq.png" alt="" />
+          </div>
+          <div>
+            <div
+              class="collapse collapse-plus bg-base-100 border border-base-300"
+            >
+              <input type="radio" name="my-accordion-3" checked="checked" />
+              <div class="collapse-title font-semibold">
+                What are the most important things I should know about riding a
+                bike?
+              </div>
+              <div class="collapse-content text-sm">
+                Safety First! Always obey the rules of the road. Obey all
+                traffic signals, signs, and laws. Get in the mindset of
+                “driving” your bike—not just “riding” your bike. This will help
+                you be a more focused and legally compliant bike rider.
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-base-100 border border-base-300"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                How can I tell if my helmet is old and I need a new one?
+              </div>
+              <div class="collapse-content text-sm">
+                Click on "Forgot Password" on the login page and follow the
+                instructions sent to your email.
+              </div>
+            </div>
+            <div
+              class="collapse collapse-plus bg-base-100 border border-base-300"
+            >
+              <input type="radio" name="my-accordion-3" />
+              <div class="collapse-title font-semibold">
+                My bike has been in storage is it safe to ride?
+              </div>
+              <div class="collapse-content text-sm">
+                Go to "My Account" settings and select "Edit Profile" to make
+                changes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- footer section  -->
-    <footer>
+    <footer class=" flex justify-between bg-blue-950 text-white lg:px-24 py-14">
+      <div class="space-y-3">
+        <div>
+          <ul class="flex gap-5">
+            <li><a href="#">Download Now</a></li>
+            <li><a href="#">License</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul class="flex gap-5">
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-white">© 2020 bike. All rights reserved</h3>
+        </div>
+      </div>
+      <div class="space-y-5">
+        <h1 class="font-medium text-white text-4xl">Get The App</h1>
+        <div class="grid gap-5">
+          <a href="https://play.google.com/store/games?device=windows&pli=1"><img src="images/others/android.png" alt=""></a>
+          <a href="https://www.apple.com/ios/ios-18/"><img src="images/others/ios.png" alt=""></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
